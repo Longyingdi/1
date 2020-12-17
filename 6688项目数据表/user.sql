@@ -1,0 +1,15 @@
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (1, '张三', '123456');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (2, '李四', '456789');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (3, '丽丽', '222222');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (4, '花花', '333333');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (5, '草草', '555555');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (23, '慢慢', '12345');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (24, '谷歌', '12333');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (25, '小猫猫', '1998');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (17, '品牌', '999');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (18, '带带', '55555');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (19, '天天', '777');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (20, '余生', '99999');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (21, '瞅瞅', '55566');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (22, '嗯嗯', '777666');
+INSERT INTO `user` (`id`, `name`, `pass`) VALUES (26, '小狗狗', '222222');
