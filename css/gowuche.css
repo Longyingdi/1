@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.head-t {
+    height: 33px;
+    background: url(../img/header-tbg.jpg) repeat-x bottom;
+}
+
+.header-tN {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header-tR {
+    width: 500px;
+    float: right;
+}
+
+.header-tR a {
+    color: #666;
+    float: left;
+    height: 33px;
+    display: block;
+    line-height: 33px;
+}
+
+.myzh,
+.mysc,
+.myDd {
+    margin-right: 45px;
+}
+
+.gwc {
+    width: 40px;
+    padding-right: 10px;
+    background: url(../img/gwcbg.jpg) no-repeat right center;
+    margin-right: 20px;
+}
+
+.welcome {
+    width: 500px;
+    height: 33px;
+    line-height: 33px;
+    padding-right: 75px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.welcome a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.welcome a:hover {
+    color: #f00;
+    text-decoration: none;
+}
+
+
+/* 以上为头部 */
+
+#doc {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.InSetTableB {
+    padding: 17px 20px 0 28px;
+    height: 25px;
+    position: relative;
+}
+
+.main-top {
+    height: 120px;
+}
+
+img {
+    border: 0;
+}
+
+.BuyTager {
+    float: right;
+    margin: 35px 145px 0 0;
+    width: 455px;
+    height: 41px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    /* margin-block-start: 1em; */
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* padding-inline-start: 40px; */
+}
+
+.BuyTager li {
+    float: left;
+    width: 127px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bolder;
+    line-height: 41px;
+    padding-left: 20px;
+}
+
+.main-box .InSet {
+    color: #000000;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    margin-bottom: 18px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.InSetNum {
+    color: #e70000;
+}
+
+.InSetTableT {
+    height: 35px;
+    line-height: 35px;
+    background: #e4e4e4;
+    font-size: 14px;
+}
+
+.InSetTableT1 {
+    margin-left: 61px;
+}
+
+.InSetTableT2 {
+    margin-left: 315px;
+}
+
+.InSetTableT3 {
+    margin-left: 110px;
+}
+
+.InSetTableT4 {
+    margin-left: 100px;
+}
+
+.InSetTableT5 {
+    margin-left: 80px;
+}
+
+.InSet-li table {
+    padding: 0 20px;
+    width: 100%;
+    background: #fffdf4;
+    font-size: 14px;
+    border: 2px solid #e4e4e4;
+    border-top: 0;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.InSet-li table td {
+    border-bottom: 1px dashed #B2B1AA;
+    height: 80px;
+    vertical-align: middle;
+    padding: 30px 5px 20px 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    /* -webkit-writing-mode: horizontal-tb !important; */
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+.proImg {
+    float: left;
+    width: 40px;
+    margin-right: 10px;
+}
+
+#CartTable .InSetTabPic img {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #b2b2aa;
+}
+
+.proImg img {
+    width: 40px;
+    height: 40px;
+}
+
+.InSetTabCount {
+    width: 50px;
+    background: url(../img1/lhinpt.jpg) no-repeat center center;
+    border: 0;
+    padding: 5px;
+    height: 21px;
+    line-height: 21px;
+    margin-right: 5px;
+}
+
+.InSetTabCountKz button {
+    display: block;
+    width: 18px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.InSetTabCountT {
+    background: url(../img1/shul-t.jpg) no-repeat center center;
+    margin-bottom: 3px;
+}
+
+.InSetTabCountB {
+    background: url(../img1/shul-b.jpg) no-repeat center center;
+}
+
+.InSet-li table td.InSetTableRig {
+    vertical-align: middle;
+}
+
+.InSetTableRig span {
+    display: block;
+    cursor: pointer;
+}
+
+.InSetTableB {
+    padding: 17px 20px 0 28px;
+    height: 25px;
+    position: relative;
+}
+
+.InSetTableB-Lef {
+    float: left;
+    vertical-align: middle;
+}
+
+.InSetTableB-Lef input {
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+
+.InSetTableB-Lef img {
+    vertical-align: bottom;
+    margin-left: 30px;
+}
+
+.InSetTableB-Rig {
+    float: right;
+    vertical-align: middle;
+}
+
+.InSetTableB-Rig .InSetNum {
+    padding: 0 5px;
+    font-weight: bolder;
+}
+
+.InSetNum {
+    color: #e70000;
+}
+
+.InSetTableB-Rig .AllInSetCost {
+    font-size: 14px;
+    color: #e70000;
+    font-weight: bolder;
+    font-family: "微软雅黑";
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.noThing {
+    height: 50px;
+    line-height: 70px;
+    display: none;
+    font-size: 16px;
+}
+
+.noThing a {
+    color: blue;
+    font-weight: Bolder;
+}
+
+.sc_tips {
+    background: #F2F2F2;
+    border: 1px solid #BDBDBD;
+    line-height: 22px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.table_03 td {
+    background: white;
+}
+
+.table_01 td,
+.table_01 th {
+    border: 1px solid #E0DFDF;
+    line-height: 22px;
+    padding: 2px 3px;
+}
+
+b {
+    font-weight: bold;
+}
+
+.InSetTableB {
+    padding: 17px 20px 0 28px;
+    height: 25px;
+    position: relative;
+}
+
+.InSetTableC {
+    padding: 17px 20px 0 28px;
+    height: 25px;
+    position: relative;
+}
+
+
+/* .InSetTableB .goTosBuy {
+    position: absolute;
+    color: #360;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    bottom: 6px;
+    right: 180px;
+} */
+
+.InSetTableC .goTosBuy {
+    position: absolute;
+    color: #360;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    bottom: 6px;
+    right: 180px;
+    /* display: block; */
+}
+
+
+/* .InSetTableB .paymentBt {
+    position: absolute;
+    display: block;
+    width: 127px;
+    height: 37px;
+    background: url(../img1/paymentBt.jpg) no-repeat center center;
+    right: 20px;
+    bottom: 0;
+} */
+
+.InSetTableC .paymentBt {
+    position: absolute;
+    display: block;
+    width: 127px;
+    height: 37px;
+    background: url(../img1/paymentBt.jpg) no-repeat center center;
+    right: 20px;
+    bottom: 0;
+    /* display: block; */
+}
+
+
+/* 尾部 */
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    clear: both;
+    margin-top: 25px !important;
+    padding: 20px 0 50px;
+    border-top: 1px solid #d0d0d0;
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.footer ol {
+    padding-left: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+li,
+ol {
+    list-style-type: none;
+}
+
+ul ol {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.footer li {
+    float: left;
+    width: 240px;
+    margin-right: 10px;
+}
+
+.footer ol a {
+    color: #333;
+}
+
+.footer .xs {
+    background: url(../img/xs.jpg) no-repeat 58px center;
+}
+
+.footer .xs1 {
+    background: url(../img/xs1.jpg) no-repeat 58px center;
+}
+
+.footer .xs2 {
+    background: url(../img/xs2.jpg) no-repeat 50px top;
+}
+
+.footer .xs3 {
+    background: url(../img/xs3.jpg) no-repeat 58px top;
+}
+
+.footer li h3 {
+    padding-left: 90px;
+    font-family: "宋体";
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    /* margin-block-start: 1em; */
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+}
+
+.copy {
+    margin-top: 80px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}

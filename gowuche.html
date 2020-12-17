@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="css/gowuche.css" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="head-t">
+        <div class="header-tN clearfix">
+            <div class="header-tR clearfix">
+                <a href="#" class="myzh">我的账户</a>
+                <a href="#" class="myDd">无注册用户查看订单</a>
+                <a href="#" class="mysc">我的收藏</a>
+                <a href="file:///D:/wamp/wamp/www/2011/xiangmu/gowuche.html" class="gwc" style="width:48px">购物车</a>
+                <a href="#" class="bzzx">帮助中心</a>
+            </div>
+            <div class="welcome">
+                <span id="lbl_passport"></span>
+                <span id="lbl_islogin">您好，欢迎光临六六八八商城。
+                    <a href="file:///D:/wamp/wamp/www/2011/xiangmu/denglu.html" target=_blank >[登录]</a>
+                    <a href="file:///D:/wamp/wamp/www/2011/xiangmu/zhuce.html" target=_blank >[注册]</a>
+                    <a href="#" target=_blank>我的订单</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 主体加尾部 -->
+    <div id="doc" class="dingdan">
+        <div class="main">
+            <div class="main-top">
+                <a href="file:///D:/wamp/wamp/www/2011/xiangmu/zhuye.html">
+                    <img src="./img/logo2019.png" style="width:190px;margin:16px 0 0 15px;float:left;">
+                </a>
+                <div class="BuyTager" style="background:url(./img1/buytagerbg1.jpg) no-repeat left center">
+                    <ul>
+                        <li>1.查看购物车</li>
+                        <li>2.填写核对订单</li>
+                        <li>3.提交成功</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-box">
+                <div style="width:100%">
+                    <div class="exchangeGoodsGuide" style="width: 730px; display: inline-block;"><span style="display:inline-block;border:1px solid #ea7c12;width:35px;height:22px;color: #ea7c12;text-align:center;line-height:22px">换购</span>
+                        <div style="display:inline-block"><span style="color:darkgray;font-size:15px;margin-left:5px">每单满100元，即可享受换购优惠</span><span style="color:#ff0000;font-size:15px;margin-left:15px;cursor:pointer" id="html_div_exchangeRightNow"> 立即换购 &gt;</span> <a href="https://search3.6688.com/SearchList-A--30-0-0-1000-1-1-0--.html"
+                                target="_blank" style="font-size:15px;margin-left:10px">去凑单 &gt;</a></div>
+                    </div>
+                    <h3 class="InSet" style="text-align:right;width:260px;display:inline-block">已将<span class="InSetNum">2</span>件商品加入购物车</h3>
+                </div>
+
+
+                <div class="InSet-li">
+                    <div class="InSetTableT">
+                        <span class="InSetTableT1">购物车中的商品</span>
+                        <span class="InSetTableT2">单价</span>
+                        <span class="InSetTableT3">数 量</span>
+                        <span class="InSetTableT4">商品合计 </span>
+                        <span class="InSetTableT5">操 作</span>
+                    </div>
+                    <table class="CartTable" id="CartTable">
+                        <tbody>
+                            <tr>
+                                <td width="10"><input type="checkbox" checked="" class="chkGoods" cartitemid="100690491" goodstotalmoney="19.9"></td>
+                                <td class="InSetTabPic" width="85">
+                                    <a class="proImg" href="http://www.6688.com/shop/goods/products.aspx?sn=tc20200226004" id="proImg"><img src="https://image.6688.com/Upload/Goodsimg/de1882c9-c25e-48ae-9c5c-9d7c6dd69cb5.jpg"></a>
+                                </td>
+                                <td width="320"><a href="http://www.6688.com/shop/goods/products.aspx?sn=tc20200226004" id="html_InSetTitle">【临期特价】次氯酸免洗洗手液消毒液500ml</a>
+                                    <div style="display:none">本品由
+                                        <font color="red"></font>
+                                        销售与服务
+                                        <!-- <img src="images/question.png" title="本商品由第三方企业直接销售、发货与服务，六六八八公司提供技术服务"> -->
+                                    </div>
+                                    <div style="display:none;color:red">本品不参与打折</div>
+                                    <div style="display:none;color:blue">专发海外</div>
+                                </td>
+                                <td width="130">￥19.90</td>
+                                <td width="140"><input type="text" limitamount="1" goodsstock="190" cartitemid="100690491" goodscaption="【临期特价】次氯酸免洗洗手液消毒液500ml" class="InSetTabCount" style="float:left;" value="1" id="CarNum_0">
+                                    <div style="float:left" class="InSetTabCountKz"><span class="InSetTabCountT" id="cartItemAmountAdd_0"></span><span class="InSetTabCountB" id="cartItemAmountReduce_0"></span></div>
+                                </td>
+                                <td width="135">￥19.90</td>
+                                <td class="InSetTableRig"><span class="delete" id="cartItemDelete_0" goodsname="【临期特价】次氯酸免洗洗手液消毒液500ml" cartitemid="100690491">删除</span></td>
+                            </tr>
+                            <tr>
+                                <td width="10"><input type="checkbox" checked="" class="chkGoods" cartitemid="100693094" goodstotalmoney="84"></td>
+                                <td class="InSetTabPic" width="85">
+                                    <a class="proImg" href="http://www.6688.com/shop/goods/products.aspx?sn=mix1130-02" id="proImg"><img src="https://image.6688.com/Upload/Goodsimg/3a991e04-b217-4301-8cf3-b92ed4c596eb.jpg"></a>
+                                </td>
+                                <td width="320"><a href="http://www.6688.com/shop/goods/products.aspx?sn=mix1130-02" id="html_InSetTitle">云南小黄姜5斤-顺丰包邮</a>
+                                    <div style="display:none">本品由
+                                        <font color="red"></font>销售与服务
+                                        <!-- <img src="images/question.png" title="本商品由第三方企业直接销售、发货与服务，六六八八公司提供技术服务"> -->
+                                    </div>
+                                    <div style="display:none;color:red">本品不参与打折</div>
+                                    <div style="display:none;color:blue">专发海外</div>
+                                </td>
+                                <td width="130">￥42.00</td>
+                                <td width="140"><input type="text" limitamount="1" goodsstock="0" cartitemid="100693094" goodscaption="云南小黄姜5斤-顺丰包邮" class="InSetTabCount" style="float:left;" value="2" id="CarNum_1">
+                                    <div style="float:left" class="InSetTabCountKz"><span class="InSetTabCountT" id="cartItemAmountAdd_1"></span><span class="InSetTabCountB" id="cartItemAmountReduce_1"></span></div>
+                                </td>
+                                <td width="135">￥84.00</td>
+                                <td class="InSetTableRig"><span class="delete" id="cartItemDelete_1" goodsname="云南小黄姜5斤-顺丰包邮" cartitemid="100693094">删除</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="InSetTableB">
+                        <div class="InSetTableB-Lef">
+                            <input type="checkbox" id="html_input_CheckBox_ChooseAll"> 全选 <img src="https://www.6688.com/images/ljt.jpg" class="OutCart" style="cursor:pointer"></div>
+                        <div class="InSetTableB-Rig">
+                            共<span class="InSetNum">2</span>件商品,总计金额：<span class="AllInSetCost" id="AllInSetCost">103.90元</span>
+                        </div>
+                        <div class="clear"></div>
+
+                    </div>
+                </div>
+                <!-- <div class="noThing" style="display: none;">
+                    您的购物车还是空的，<a href="https://www.6688.com">立即购买</a>
+
+                </div> -->
+                <div id="html_div_discountInfo" style="text-align:center;">
+                    <font style="color:#ff0000;font-size:14px;font-weight:blod">每单满300元，订单生成还会自动95折，您还差196.1元就可以享受啦&nbsp;&nbsp;&nbsp;&nbsp;</font>
+                </div>
+            </div>
+            <!--
+            <div class="AllSpLink">
+                <div class="AllSpLinkT">
+                    看过该商品的还看过
+                </div>
+                <div class="AllSpLinkSp">
+                    <span class="AllSpLinkSpUp" style="display:none"></span>
+                    <span class="AllSpLinkSpDn" style="display:none"></span>
+                    <ul class="AllSpLinkSpUl" id="AllSpLinkSpUl">
+    
+                    </ul>
+                </div>
+            </div>
+            -->
+            <div class="sc_tips">
+
+                <!-- <div class="mar_t_10">
+                    <div class="bold" style="color:red">每单满70元就免邮费。欢迎继续挑选下列特惠产品：</div>
+                    <div id="html_div_promotionGoodsList">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_01 table_03">
+                            <tbody>
+                                <tr>
+                                    <td><img src="https://image.6688.com/Upload/mobileImg/tc20171207001.jpg" width="50" height="50"></td>
+                                    <td>以特价39元购买向日葵蜂蜜500克</td>
+                                    <td>数量:<input type="text" value="1" id="goodsNum_tc20171207001" style="width:20px"><b><u url="https://www.6688.com/shop/Goods/BuyNow.aspx?Sn=tc20171207001" onclick="javascript:AddGoodsToCars('tc20171207001','goodsNum_tc20171207001')" style="cursor:pointer">购买</u></b></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="https://image.6688.com/Upload/mobileImg/tc20180814001.jpg" width="50" height="50"></td>
+                                    <td>以特价65元购买昆仑雪菊大罐80克-65折，原价100元</td>
+                                    <td>数量:<input type="text" value="1" id="goodsNum_tc20180814001" style="width:20px"><b><u url="https://www.6688.com/shop/Goods/BuyNow.aspx?Sn=tc20180814001" onclick="javascript:AddGoodsToCars('tc20180814001','goodsNum_tc20180814001')" style="cursor:pointer">购买</u></b></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="https://image.6688.com/Upload/mobileImg/tc20141219001.jpg" width="50" height="50"></td>
+                                    <td>以特价90元购买和田大枣混级简装2公斤/箱-原价156元</td>
+                                    <td>数量:<input type="text" value="1" id="goodsNum_tc20141219001" style="width:20px"><b><u url="https://www.6688.com/shop/Goods/BuyNow.aspx?Sn=tc20141219001" onclick="javascript:AddGoodsToCars('tc20141219001','goodsNum_tc20141219001')" style="cursor:pointer">购买</u></b></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="https://image.6688.com/Upload/mobileImg/tc20200630006.jpg" width="50" height="50"></td>
+                                    <td>以特价78元购买原价165元的一次性口罩50个（蓝色中童款）</td>
+                                    <td>数量:<input type="text" value="1" id="goodsNum_tc20200630006" style="width:20px"><b><u url="https://www.6688.com/shop/Goods/BuyNow.aspx?Sn=tc20200630006" onclick="javascript:AddGoodsToCars('tc20200630006','goodsNum_tc20200630006')" style="cursor:pointer">购买</u></b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+            <div id="html_div_gotoAccount" class="InSetTableC">
+                <!-- <div>
+                    <a href="https://www.6688.com" class="goTosBuy">
+                        <span>再逛逛&gt;&gt;</span>
+                    </a>
+                    <a style="cursor:pointer" class="paymentBt">
+                    </a>
+                </div> -->
+
+            </div>
+            <div class="footer" style="width:1000px;margin:0 auto">
+                <ul>
+                    <li>
+                        <h3 class="xs">新手指南</h3>
+                        <ul>
+                            <ol><a href="#">注册新用户</a></ol>
+                            <ol><a href="#">网站订购流程</a></ol>
+                            <ol><a href="#">不用注册也可直接购买</a></ol>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="xs1">付款方式</h3>
+                        <ul>
+                            <ol><a href="#">信用卡直接支付</a></ol>
+                            <ol><a href="#">支付宝、快钱、财付通</a></ol>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="xs2">配送方式</h3>
+                        <ul>
+                            <ol><a href="#">货到付款城市及配送时间</a></ol>
+                            <ol><a href="#">款到快递城市及配送时间</a></ol>
+                            <!-- <ol><a href="#">不用注册也可直接购买</a></ol> -->
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="xs3">帮助中心</h3>
+                        <ul>
+                            <ol><a href="#">常见热点问题</a></ol>
+                            <ol><a href="#">联系我们</a></ol>
+                            <ol><a href="#">投诉与建议</a></ol>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                <p class="copy">CopyRight © 1995-2013 六六八八电子商务网 版权所有 京ICP备140044号</p>
+            </div>
+        </div>
+        <script src="./js/ajax1.js"></script>
+        <script src="./js/cookie.js"></script>
+        <script src="./js/gowuche.js"></script>
+</body>
+
+</html>

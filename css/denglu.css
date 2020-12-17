@@ -1,0 +1,555 @@
+body {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.head-t {
+    height: 33px;
+    background: url(../img/header-tbg.jpg) repeat-x bottom;
+}
+
+.header-tN {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header-tR {
+    width: 500px;
+    float: right;
+}
+
+.header-tR a {
+    color: #666;
+    float: left;
+    height: 33px;
+    display: block;
+    line-height: 33px;
+}
+
+.myzh,
+.mysc,
+.myDd {
+    margin-right: 45px;
+}
+
+.gwc {
+    width: 40px;
+    padding-right: 10px;
+    background: url(../img/gwcbg.jpg) no-repeat right center;
+    margin-right: 20px;
+}
+
+.welcome {
+    width: 500px;
+    height: 33px;
+    line-height: 33px;
+    padding-right: 75px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.welcome a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.welcome a:hover {
+    color: #f00;
+    text-decoration: none;
+}
+
+.header {
+    height: 115px;
+    overflow: Hidden;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 257px;
+    float: left;
+}
+
+.logo img {
+    width: 234px;
+    margin: 16px 0 0 15px;
+}
+
+.Sou {
+    width: 320px;
+    float: left;
+    margin-left: 30px;
+    display: inline;
+}
+
+.SouS {
+    width: 300px;
+    border: 1px solid #336702;
+    height: 22px;
+    margin: 38px 0 6px 0;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.Ss {
+    color: #666;
+    border: 0;
+    background: none;
+    width: 261px;
+    float: left;
+    padding: 3px;
+    height: 16px;
+}
+
+input {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.SsBt {
+    cursor: pointer;
+    width: 33px;
+    height: 22px;
+    float: right;
+    border: 0;
+    border-left: 1px solid #336702;
+    background: url(../img/ssbg.jpg) no-repeat center center;
+}
+
+.HotS a {
+    margin-right: 10px;
+    color: #666;
+    display: block;
+    float: left;
+}
+
+.header-r {
+    width: 310px;
+    float: right;
+    text-align: right;
+    line-height: 115px;
+}
+
+.header-r img {
+    margin: 12px 0 0;
+}
+
+#reg {
+    width: 1000px;
+    margin: 0 auto 40px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.regLef {
+    float: left;
+    width: 55%;
+}
+
+.loginTop {
+    height: 40px;
+    line-height: 40px;
+    clear: both;
+    border-bottom: 3px solid #CCC;
+    color: #383838;
+}
+
+.loginTop h2 {
+    font-size: 24px;
+    font-family: "å®‹ä½“";
+    font-weight: normal;
+    border-bottom: 3px solid #326400;
+    color: #326400;
+    margin-bottom: -3px;
+    float: left;
+    padding: 0 15px;
+}
+
+#reg .tishi {
+    height: 45px;
+    line-height: 22px;
+    width: 440px;
+    margin-top: 15px;
+    padding-left: 5px;
+}
+
+#reg .tishi p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#reg .loginTable {
+    margin: 0;
+}
+
+.loginTable {
+    margin: 30px 0 0 70px;
+    font-size: 14px;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+table tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.loginTable td {
+    height: 70px;
+    width: 460px;
+}
+
+.regRig {
+    width: 45%;
+    height: 470px;
+    float: left;
+    background: #f7f7f7;
+}
+
+.loginTop {
+    height: 40px;
+    line-height: 40px;
+    clear: both;
+    border-bottom: 3px solid #CCC;
+    color: #383838;
+}
+
+.loginTop h2 {
+    font-size: 24px;
+    font-family: "å®‹ä½“";
+    font-weight: normal;
+    border-bottom: 3px solid #326400;
+    color: #326400;
+    margin-bottom: -3px;
+    float: left;
+    padding: 0 15px;
+}
+
+.loginTable input[type="text"] {
+    height: 27px;
+    padding: 0 0 0 10px;
+    line-height: 27px;
+}
+
+.loginTable .name {
+    color: #afafaf;
+}
+
+.loginTable td * {
+    vertical-align: middle;
+}
+
+.loginTable input[type="password"] {
+    height: 27px;
+    padding: 0 0 0 10px;
+    line-height: 27px;
+}
+
+.loginTable .regBt {
+    width: 127px;
+    height: 37px;
+    border: 0;
+    background: url(../img/regbt.jpg) no-repeat center center;
+    cursor: pointer;
+}
+
+input[type="button" i] {
+    appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: -internal-light-dark(black, white);
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+#reg .regRig .tishi {
+    height: 45px;
+    line-height: 22px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-left: 5px;
+}
+
+#reg .tishi {
+    height: 45px;
+    line-height: 22px;
+    width: 440px;
+    margin-top: 15px;
+    padding-left: 5px;
+}
+
+.regRig table {
+    width: 400px;
+    margin: 0 auto;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.regRig table td {
+    height: 50px;
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.regRig .regUs {
+    background: url(../img/usbg.jpg) no-repeat left center;
+}
+
+.regRig table td p {
+    width: 170px;
+    padding-left: 30px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.regRig table td p input {
+    width: 160px;
+    height: 19px;
+    padding: 5px;
+    line-height: 18px;
+    border: 0;
+    background: none;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.regRig .regPw {
+    background: url(../img/pwbg.jpg) no-repeat left center;
+}
+
+.yanzhenr {
+    color: #000;
+    width: 85px;
+    float: left;
+    padding-left: 5px;
+    height: 28px;
+    line-height: 28px;
+    background: none;
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+
+.regRig table .regRigWj {
+    float: left;
+    padding: 8px 10px;
+}
+
+.regRig table td a {
+    color: #0b72a4;
+}
+
+.yanzhenrImg {
+    width: 100px;
+    height: 31px;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+img {
+    border: 0;
+}
+
+.regRig .regRigBt {
+    width: 127px;
+    height: 37px;
+    border: 0;
+    background: url(../img/loginBt.jpg) no-repeat center center;
+    cursor: pointer;
+}
+
+.regRig .regRigBt1 {
+    width: 156px;
+    height: 37px;
+    border: 0;
+    background: url(../img/loginBtot.jpg) no-repeat center center;
+    cursor: pointer;
+}
+
+.wblogin {
+    margin: 0 20px 0 15px;
+}
+
+.zfblogin {
+    margin-top: -5px;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    clear: both;
+    margin-top: 25px !important;
+    padding: 20px 0 50px;
+    border-top: 1px solid #d0d0d0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* padding-inline-start: 40px; */
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.footer ol {
+    padding-left: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+li,
+ol {
+    list-style-type: none;
+}
+
+ul ol {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.footer li {
+    float: left;
+    width: 240px;
+    margin-right: 10px;
+}
+
+.footer ol a {
+    color: #333;
+}
+
+.footer .xs {
+    background: url(../img/xs.jpg) no-repeat 58px center;
+}
+
+.footer .xs1 {
+    background: url(../img/xs1.jpg) no-repeat 58px center;
+}
+
+.footer .xs2 {
+    background: url(../img/xs2.jpg) no-repeat 50px top;
+}
+
+.footer .xs3 {
+    background: url(../img/xs3.jpg) no-repeat 58px top;
+}
+
+.footer li h3 {
+    padding-left: 90px;
+    font-family: "宋体";
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    /* margin-block-start: 1em; */
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+}
+
+.copy {
+    margin-top: 80px;
+    text-align: center;
+}

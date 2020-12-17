@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表页</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="css/liebiao.css" />
+    <style>
+        .caption h3,
+        .thumbnail ol {
+            word-break: keep-all;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .Pagination {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            border: 1px solid #000;
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head-t">
+        <div class="header-tN clearfix">
+            <div class="header-tR clearfix">
+                <a href="#" class="myzh">我的账户</a>
+                <a href="#" class="mysc">我的收藏</a>
+                <a href="#" target=_blank class="gwc" style="width:48px">购物车</a>
+                <a href="#" class="bzzx">帮助中心</a>
+            </div>
+            <div class="welcome">
+                <span id="lbl_passport"></span>
+                <span id="lbl_islogin">您好，欢迎光临六六八八商城。
+                    <a href="./denglu.html" target=_blank >[登录]</a>
+                    <a href="./zhuce.html" target=_blank >[注册]</a>
+                    <a href="#" target=_blank>我的订单</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- logo图标和搜索框 -->
+    <div class="headerBg">
+        <div class="header">
+            <div class="logo">
+                <a href="./zhuye.html" target=_blank><img src="./img/logo2019.png" alt=""></a>
+            </div>
+            <div class="Sou">
+                <div class="hotWords">
+                    <li>
+                        <a href="./liebiao.html" target=_blank>洗护消毒</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>零食</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>新国货</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>小家电</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>百货</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>鲜果</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>蔬菜</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>新品</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>特价</a>
+                    </li>
+                </div>
+                <div class="SouS">
+                    <form action="#" name="search3" id="SearchForm" method="post" target="_blank" onsubmit="return ToSearchUrl()">
+                        <input type="text" name="kw" class="Ss" id="kw" value style="width:626px;height:35px;">
+                        <input type="submit" class="SsBt" value>
+                    </form>
+                </div>
+                <div class="HotS">
+                    <li>
+                        <a href="./liebiao.html" target=_blank>生鲜蛋奶</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>特产零食</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>蜂蜜饮品</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>干货食材</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>粮油调味</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>茶叶咖啡</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>家居百货</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>个护美妆</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>服装服饰</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>健康洗消</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>数码家电</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>文化创意</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体部分 -->
+    <div class="boder" id="grabble">
+        <div class="link-nav">
+            <span style="float:right;width:400px;height:35px;display:block;overflow:Hidden">
+            <b id="html_b_keyInfo"></b>
+            共搜索到<b id="html_b_totalGoods" style="color:#000;margin:0 5px">92</b>个商品
+            </span>
+            <h2 class="AllSpTitle" id="one" style="display:inline;background-color:#689835;font-size:20px">所有商品分类<span style="float: right">▽</span></h2>
+        </div>
+        <!-------------------左侧栏----------------->
+        <div class="leftNavigation" id="two" style="display: none;margin: -10px auto">
+            <!-------------------商品详细左侧栏----------------->
+            <!--导航栏 begin-->
+            <!-------------------左侧栏----------------->
+            <div class="clear"></div>
+            <!-- <script src="https://www.6688.com/js/index_2019/catalog.js?version=20200224001"></script> -->
+            <style type="text/css">
+                #catalog_classFirst ul li {
+                    display: inline-block;
+                    text-align: left;
+                    width: 30px;
+                    height: 2px;
+                    margin: 5px
+                }
+                
+                .leftNavigation {
+                    overflow: hidden;
+                    width: 230px;
+                    position: absolute;
+                    margin: 0 auto;
+                }
+                
+                .AllSpN {
+                    font-size: 14px;
+                    _padding-top: 3px;
+                    border: 2px solid #336601;
+                    width: 226px;
+                    background: #fff;
+                    z-index: 999;
+                    overflow: hidden;
+                }
+                
+                .AllSpN a {
+                    color: #333
+                }
+                
+                .AllSpN a:hover {
+                    color: #f00;
+                    text-decoration: underline
+                }
+                
+                .AllSpN1 {
+                    width: 230px;
+                    border-bottom: 1px solid #E4E4E4;
+                    overflow: Hidden;
+                    height: 100%
+                }
+                
+                .AllSpN1 .AllSp2 {
+                    margin: 0 0 0 10px;
+                    width: 56px;
+                }
+                
+                .AllSpN1 li {
+                    margin: 0 0 0 10px;
+                    height: 41px;
+                    line-height: 41px;
+                    font-size: 18px;
+                    font-weight: normal
+                }
+                
+                .AllSpN1 .subTitle {
+                    margin: 0 0 0 5px;
+                }
+                
+                .AllSpN1 .subSwith {
+                    margin: 0 0 0 0;
+                    cursor: pointer;
+                    width: 76%
+                }
+                
+                .SubCatalogList {
+                    margin-left: 10px;
+                    width: 305px;
+                    display: none
+                }
+                
+                .SubCatalogList li {
+                    width: 60px;
+                    font-weight: normal
+                }
+                
+                .AllSpN1 ul li a {
+                    color: black;
+                    margin-left: 70px;
+                }
+                
+                .point {
+                    width: 11px;
+                    font-size: 10px;
+                    display: inline-block;
+                    margin-left: 3px
+                }
+                
+                .AllSpN1 ul li a:hover {
+                    color: black;
+                    text-decoration: none;
+                }
+            </style>
+            <div class="AllSpN">
+                <li class="AllSpN1">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/1生鲜蛋奶.png) no-repeat;background-position:10px 5px;">
+                            <a href="./liebiao.html?liebie=1" target=_blank>生鲜<div class="point">●</div>蛋奶</a></li>
+                    </ul>
+                </li>
+
+                <li class="AllSpN1" style="background:#eee">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/2特产零食.png) no-repeat;background-position:10px 5px;">
+                            <a href="./liebiao.html?liebie=4" target=_blank>特产<div class="point">●</div>零食</a></li>
+                    </ul>
+                </li>
+
+                <li class="AllSpN1">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/3蜂蜜王浆.png) no-repeat;background-position:10px 5px;">
+                            <a href="./liebiao.html?liebie=5" target=_blank>蜂蜜<div class="point">●</div>饮品</a></li>
+                    </ul>
+                </li>
+                <li class="AllSpN1" style="background:#eee">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/4干货食材.png) no-repeat;background-position:10px 5px;">
+                            <a href="./liebiao.html?liebie=6" target=_blank>干货<div class="point">●</div>食材</a></li>
+                    </ul>
+                </li>
+                <li class="AllSpN1">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/5粮油调味.png) no-repeat;background-position:10px 5px;">
+                            <a href="./liebiao.html?liebie=7" target=_blank>粮油<div class="point">●</div>调味</a></li>
+                    </ul>
+                </li>
+                <li class="AllSpN1" style="background:#eee">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/7茶叶饮品.png) no-repeat;background-position:10px 5px;">
+                            <a href="./liebiao.html?liebie=8" target=_blank>茶叶<div class="point">●</div>咖啡</a></li>
+                    </ul>
+                </li>
+                <li class="AllSpN1">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/6家居日用.png) no-repeat;background-position:10px 5px;">
+                            <a href="./liebiao.html?liebie=9" target=_blank>家居<div class="point">●</div>百货</a></li>
+                    </ul>
+                </li>
+                <li class="AllSpN1" style="background:#eee">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/8化妆清洁.png) no-repeat;background-position:15px 5px;">
+                            <a href="./liebiao.html?liebie=10" target=_blank>个护<div class="point">●</div>美妆</a></li>
+                    </ul>
+                </li>
+                <li class="AllSpN1">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/10首饰其它.png) no-repeat;background-position:10px 5px;">
+                            <a href="./liebiao.html?liebie=11" target=_blank>服装<div class="point">●</div>服饰</a></li>
+                    </ul>
+                </li>
+                <li class="AllSpN1" style="background:#eee">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/11健康洗消.png) no-repeat;background-position:10px 0px;">
+                            <a href="./liebiao.html?liebie=12" target=_blank>健康<div class="point">●</div>洗消</a></li>
+                    </ul>
+                </li>
+                <li class="AllSpN1">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/12数码手机.png) no-repeat;background-position:10px 0px;">
+                            <a href="./liebiao.html?liebie=13" target=_blank>数码<div class="point">●</div>家电</a></li>
+                    </ul>
+                </li>
+                <li class="AllSpN1" style="background:#eee">
+                    <ul class="catalogSub">
+                        <li class="subTitle" style="background:url(https://www.6688.com/imgs/catalog/9文化生活.png) no-repeat;background-position:10px 0px;">
+                            <a href="./liebiao.html?liebie=1" target=_blank>文化<div class="point">●</div>创意</a></li>
+                    </ul>
+                </li>
+            </div>
+            <!-------------------左侧栏End----------------->
+
+            <div class="clear"></div>
+        </div>
+        <script type="text/javascript" src="./js/caidanlan.js"></script>
+        <!-------------------左侧栏End----------------->
+        <!-------------------搜索主内容----------------->
+        <div class="mainMenu">
+            <!-- <div id="html_div_page_top" class="grabble_fy"><span class="p2">共2页，当前是第1页</span><a href="/SearchList-A02--0-0-0-80-1-0-0--.html" class="p1">上一页</a><a href="/SearchList-A02--0-0-0-80-1-2-0--.html" class="p1">下一页</a></div> -->
+            <ul id="div_SearchResult" class="row" style="padding-left:15px;">
+            </ul>
+            <div class="Pagination"></div>
+            <div class=""></div>
+            <!-- <div id="html_div_page_footer" class="grabble_fy"> <a href="/SearchList-A02--0-0-0-80-1-1-0--.html" class="on">1</a> <a href="/SearchList-A02--0-0-0-80-1-2-0--.html" class="p1">2</a> <a href="/SearchList-A02--0-0-0-80-1-2-0--.html" class="p1">下一页</a> <a href="/SearchList-A02--0-0-0-80-1-2-0--.html"
+                    class="p1">尾页</a> <span class="p2"> 共2页</span></div> -->
+        </div>
+        <!-------------------搜索主内容End----------------->
+
+    </div>
+
+    <script src="./js/fenyeqi.js"></script>
+    <script src="./js/ajax1.js"></script>
+    <script src="./js/liebiao.js"></script>
+    <!-- 尾部 -->
+    <div class="footer" style="width:1000px;margin:0 auto">
+        <ul>
+            <li>
+                <h3 class="xs">新手指南</h3>
+                <ul>
+                    <ol><a href="#">注册新用户</a></ol>
+                    <ol><a href="#">网站订购流程</a></ol>
+                    <ol><a href="#">不用注册也可直接购买</a></ol>
+                </ul>
+            </li>
+            <li>
+                <h3 class="xs1">付款方式</h3>
+                <ul>
+                    <ol><a href="#">信用卡直接支付</a></ol>
+                    <ol><a href="#">支付宝、快钱、财付通</a></ol>
+                </ul>
+            </li>
+            <li>
+                <h3 class="xs2">配送方式</h3>
+                <ul>
+                    <ol><a href="#">货到付款城市及配送时间</a></ol>
+                    <ol><a href="#">款到快递城市及配送时间</a></ol>
+                    <ol><a href="#">快递查询</a></ol>
+                </ul>
+            </li>
+            <li>
+                <h3 class="xs3">帮助中心</h3>
+                <ul>
+                    <ol><a href="#">常见热点问题</a></ol>
+                    <ol><a href="#">联系我们</a></ol>
+                    <ol><a href="#">投诉与建议</a></ol>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <p class="copy">CopyRight © 1995-2020 六六八八电子商务网 版权所有 京ICP证140044号 &nbsp;京公网安备11010502024535</p>
+    </div>
+</body>
+
+</html>

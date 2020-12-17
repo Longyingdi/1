@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="css/zhuye.css" />
+    <style>
+        .caption h3,
+        .thumbnail ol {
+            word-break: keep-all;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .Pagination {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            border: 1px solid #000;
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部登录注册导航 -->
+    <div class="head-t">
+        <div class="header-tN clearfix">
+            <div class="header-tR clearfix">
+                <a href="#" class="myzh">我的账户</a>
+                <a href="#" class="mysc">我的收藏</a>
+                <a href="#" target=_blank class="gwc" style="width:48px">购物车</a>
+                <a href="#" class="bzzx">帮助中心</a>
+            </div>
+            <div class="welcome">
+                <span id="lbl_passport"></span>
+                <span id="lbl_islogin">您好，欢迎光临六六八八商城。
+                    <a href="./denglu.html" target=_blank >[登录]</a>
+                    <a href="./zhuce.html" target=_blank >[注册]</a>
+                    <a href="#" target=_blank>我的订单</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- logo图标和搜索框 -->
+    <div class="headerBg">
+        <div class="header">
+            <div class="logo">
+                <a href="./zhuye.html" target=_blank><img src="./img/logo2019.png" alt=""></a>
+            </div>
+            <div class="Sou">
+                <div class="hotWords">
+                    <li>
+                        <a href="./liebiao.html" target=_blank>洗护消毒</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>零食</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>新国货</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>小家电</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>百货</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>鲜果</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>蔬菜</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>新品</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>特价</a>
+                    </li>
+                </div>
+                <div class="SouS">
+                    <form action="#" name="search3" id="SearchForm" method="post" target="_blank" onsubmit="return ToSearchUrl()">
+                        <input type="text" name="kw" class="Ss" id="kw" value style="width:626px;height:35px;">
+                        <input type="submit" class="SsBt" value>
+                    </form>
+                </div>
+                <div class="HotS">
+                    <li>
+                        <a href="./liebiao.html" target=_blank>生鲜蛋奶</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>特产零食</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>蜂蜜饮品</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>干货食材</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>粮油调味</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>茶叶咖啡</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>家居百货</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>个护美妆</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>服装服饰</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>健康洗消</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>数码家电</a>
+                    </li>
+                    <li>
+                        <a href="./liebiao.html" target=_blank>文化创意</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 所有商品分类 -->
+    <div class="link-nav" style="background-color:#689835;width:1000px;height:35px;margin:0 auto">
+        <h2 style="width:214px;color:white;cursor:pointer;font-size:21px;margin-left:20px;">所有商品分类 ∨</h2>
+    </div>
+    <!-- 商品列表和轮播图 -->
+    <div class="navigation_bg">
+        <div class="navigation">
+            <!-- 商品列表 -->
+            <div class="leftNavigation">
+                <div class="AllSpN">
+                    <li class="AllSpN1" style="height:41px">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/1生鲜蛋奶.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=1" target=_blank>
+                                生鲜<div class="point">●</div>蛋奶
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="AllSpN1" style="background:#eee">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/2特产零食.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=4" target=_blank>
+                                特产
+                                <div class="point">●</div>
+                                零食
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="AllSpN1">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/3蜂蜜王浆.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=5" target=_blank>
+                                蜂蜜
+                                <div class="point">●</div>
+                                饮品
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="AllSpN1" style="background:#eee">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/4干货食材.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=6" target=_blank>
+                                干货
+                                <div class="point">●</div>
+                                食材
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="AllSpN1">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/5粮油调味.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=7" target=_blank>
+                                粮油
+                                <div class="point">●</div>
+                                调味
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="AllSpN1" style="background:#eee">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/7茶叶饮品.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=8" target=_blank>
+                                茶叶
+                                <div class="point">●</div>
+                                咖啡
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="AllSpN1">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/6家居日用.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=9" target=_blank>
+                                家居
+                                <div class="point">●</div>
+                                百货
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="AllSpN1" style="background:#eee">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/8化妆清洁.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=10" target=_blank>
+                                个户
+                                <div class="point">●</div>
+                                美妆
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="AllSpN1">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/10首饰其它.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=11" target=_blank>
+                                服装
+                                <div class="point">●</div>
+                                服饰
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="AllSpN1" style="background:#eee">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/11健康洗消.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=12" target=_blank>
+                                健康
+                                <div class="point">●</div>
+                                洗消
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="AllSpN1">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/12数码手机.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=13" target=_blank>
+                                数码
+                                <div class="point">●</div>
+                                家电
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="AllSpN1" style="background:#eee">
+                        <ul class="catalogSub">
+                            <li class="subTitle" style="background:url(./img/9文化生活.png) no-repeat;background-position:10px 5px;">
+                                <a href="./liebiao.html?liebie=1" target=_blank>
+                                文化
+                                <div class="point">●</div>
+                                创意
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+            <!-- 轮播图 -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000" style="position: relative;left: 230px;width: 770px;height: 508px;cursor: pointer;overflow: hidden;">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="./liebiao.html" target=_blank style="display:block;">
+                            <img src="imgs/1.jpg" alt="...">
+                            <div class="carousel-caption">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="./liebiao.html" target=_blank style="display:block;">
+                            <img src="imgs/2.jpg" alt="...">
+                            <div class="carousel-caption">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="./liebiao.html" target=_blank style="display:block;">
+                            <img src="imgs/3.jpg" alt="...">
+                            <div class="carousel-caption">
+                        </a>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <a href="./liebiao.html" target=_blank style="display:block;">
+                            <img src="imgs/4.jpg" alt="...">
+                            <div class="carousel-caption">
+                        </a>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <a href="./liebiao.html" target=_blank style="display:block;">
+                            <img src="imgs/5.jpg" alt="...">
+                            <div class="carousel-caption">
+                        </a>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <a href="./liebiao.html" target=_blank style="display:block;">
+                            <img src="imgs/6.jpg" alt="...">
+                            <div class="carousel-caption">
+                        </a>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <a href="./liebiao.html" target=_blank style="display:block;">
+                            <img src="imgs/7.jpg" alt="...">
+                            <div class="carousel-caption">
+                        </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <script src="./bootstrap/js/jquery-1.11.0.js"></script>
+            <script src="./bootstrap/js/bootstrap.js"></script>
+        </div>
+    </div>
+    <!-- 今日特价等等广告 -->
+    <div class="promotion_bg">
+        <div class="promotion">
+            <ul>
+                <li>
+                    <a href="./liebiao.html" target=_blank>
+                        <img src="./img/promotion_1_JinRiTeJia.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="./liebiao.html" target=_blank>
+                        <img src="./img/promotion_2_MeiRiShangXin.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="./liebiao.html" target=_blank>
+                        <img src="./img/promotion_3_ZiShaJingPin.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="./liebiao.html" target=_blank>
+                        <img src="./img/promotion_4_WenWanZiHua.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="width:1000px;height:10px;display:inline-block;"></div>
+    <!-- 当前热门和滚动搜索框绿色条 -->
+    <div style="width:1000px;height:75px;background-color:#acc97c;margin:0 auto;">
+        <div style="display:inline-block;height:42px;width:3px;background-color:white;margin-left:20px;margin-top:19px"></div>
+        <div style="display:inline-block;height:75px;margin:0 auto;margin-left:20px;margin-top:10px;color:white;font-size:40px;vertical-align:top">当前热门</div>
+        <div style="display:inline-block;border-radius:25px;margin-left:20px;height:46px;width:740px;background-color:white;vertical-align:top;margin-top:15px;">
+            <div id="scroll" class="scroll clearfix">
+                <ul id="con1" style="height: 240px; top: -30px;">
+
+                    <li><a href="#">●新疆热门特产:生鲜果蔬、大枣核桃等干果、牛羊肉、 奶品...</a></li>
+                    <li></li>
+                    <li><a href="#">●西北特产:陕西老张家空心挂面，甘肃和尚头面粉，青海黑枸杞...</a></li>
+                    <li></li>
+                    <li><a href="#">●云贵川热门特产：云南咖啡、普洱茶、菌菇...四川鲜果等</a></li>
+                    <li></li>
+                    <li><a href="#">●闽粤特产:白茶，茉莉花茶，武夷岩茶，香菇，银耳，莲子、陈皮、柑普...</a></li>
+                    <li></li>
+                    <li><a href="#">●新疆热门特产:生鲜果蔬、大枣核桃等干果、牛羊肉、 奶品...</a></li>
+                    <li></li>
+                    <li><a href="#">●西北特产:陕西老张家空心挂面，甘肃和尚头面粉，青海黑枸杞...</a></li>
+                    <li></li>
+                    <li><a href="#">●云贵川热门特产：云南咖啡、普洱茶、菌菇...四川鲜果等</a></li>
+                    <li></li>
+                    <li><a href="#">●闽粤特产:白茶，茉莉花茶，武夷岩茶，香菇，银耳，莲子、陈皮、柑普...</a></li>
+
+
+
+                </ul>
+                <ul id="con2"></ul>
+            </div>
+            <div style="display:inline-block;font-size:35px;color:#669934;text-align:right;width:80px;line-height:46px;cursor:pointer" id="html_div_moreInfo_6688">HOT</div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        var area = document.getElementById('scroll');
+        var con1 = document.getElementById('con1');
+        var con2 = document.getElementById('con2');
+        con2.innerHTML = con1.innerHTML;
+
+        function scrollUp() {
+            if (area.scrollTop >= con1.offsetHeight) {
+                area.scrollTop = 0;
+            } else {
+                area.scrollTop++
+            }
+        }
+        var time = 50;
+        var mytimer = setInterval(scrollUp, time);
+        area.onmouseover = function() {
+            clearInterval(mytimer);
+        }
+        area.onmouseout = function() {
+            mytimer = setInterval(scrollUp, time);
+        }
+    </script>
+    <!-- 购物商品信息1 -->
+    <div class="hotGoodsList">
+        <ul id="html_ul_hotgoodsList" class="row" style="margin-right: -15px;
+        margin-left: -6px;">
+
+        </ul>
+        <div class="Pagination" style="display:none;"></div>
+    </div>
+    <!-- <div style="width:1000px;height:10px;display:inline-block;"></div> -->
+    <script src="./js/fenyeqi.js"></script>
+    <script src="./js/ajax1.js"></script>
+    <script src="./js/zhuyeliebiao.js"></script>
+    <!-- 文创商城当前热门绿色条 -->
+    <!-- <div style="width:1000px;height:75px;background-color:#acc97c;margin:0 auto;">
+        <div style="display:inline-block;height:42px;width:3px;background-color:white;margin-left:20px;margin-top:19px"></div>
+        <div style="display:inline-block;height:75px;margin:0 auto;margin-left:20px;margin-top:10px;color:white;font-size:35px;vertical-align:top">文创商城当前热门</div>
+        <div class="wcCatalog">
+            <ul>
+                <li><a href="#">紫砂作品</a></li>
+                <li><a href="#">章料</a></li>
+                <li><a href="#">闲章</a></li>
+                <li><a href="#">挂件·挂坠</a></li>
+                <li><a href="#">把件</a></li>
+                <li><a href="#">摆件</a></li>
+                <li><a href="#">手串</a></li>
+                <li><a href="#">首饰·服饰</a></li>
+                <li><a href="#">木艺</a></li>
+                <li><a href="#">书法</a></li>
+                <li><a href="#">国画</a></li>
+                <li><a href="#">油画</a></li>
+                <li><a href="#">其它</a></li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- 购物商品信息2 -->
+    <!-- <div class="hotGoodsList">
+        <ul id="html_ul_hotgoodsList_llc" class="row1">
+            <li class="first">
+                <a href="https://www.6688.com/shop/Goods/Products.aspx?sn=mix0136" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/mix0136.jpg"> </div>
+                    <div class="goodsPrice">400~880元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://www.6688.com/shop/Goods/Products.aspx?sn=mix0830" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/mix0830.jpg"> </div>
+                    <div class="goodsPrice">1200~2300元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://www.6688.com/shop/Goods/Products.aspx?sn=mix0114" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/mix0114.jpg"> </div>
+                    <div class="goodsPrice">12~298元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://www.6688.com/shop/Goods/Products.aspx?sn=mix0507" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/mix0507.jpg"> </div>
+                    <div class="goodsPrice">138元</div>
+                </a>
+            </li>
+            <li class="splitLine"></li>
+            <li class="first">
+                <a href="https://www.6688.com/shop/Goods/Products.aspx?sn=bfg2020071021" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/bfg2020071021.jpg"> </div>
+                    <div class="goodsPrice">290元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://www.6688.com/shop/Goods/Products.aspx?sn=bfg2020071024" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/bfg2020071024.jpg"> </div>
+                    <div class="goodsPrice">290元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://www.6688.com/shop/Goods/Products.aspx?sn=bfg2020071025" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/bfg2020071025.jpg"> </div>
+                    <div class="goodsPrice">290元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://www.6688.com/shop/Goods/Products.aspx?sn=bfg2020071023" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/bfg2020071023.jpg"> </div>
+                    <div class="goodsPrice">299元</div>
+                </a>
+            </li>
+            <li class="splitLine"></li>
+            <li class="first">
+                <a href="https://www.6688.com/shop/Goods/Products.aspx?sn=bfg2020071022" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/bfg2020071022.jpg"> </div>
+                    <div class="goodsPrice">280元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://search3.6688.com/SearchList-A--0-0-0-40-0-1-0--%E7%90%A5%E7%8F%80%20%E8%9C%9C%E8%9C%A1.html?NotSearchGoods=schgds20200120002" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/schgds20200120002.jpg"> </div>
+                    <div class="goodsPrice">180~18800元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://wh.6688.com/KeyWordsSearch-A-%E9%AB%98%E5%90%AB%E9%87%8F%E6%9C%B1%E7%A0%82.html?NotSearchGoods=schgds20200107001" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/schgds20200107001.jpg"> </div>
+                    <div class="goodsPrice">85~9000元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://search3.6688.com/SearchList-A--0-0-0-40-0-1-0--%E5%B4%96%E6%9F%8F.html?NotSearchGoods=schgds20200522001" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/schgds20200522001.jpg"> </div>
+                    <div class="goodsPrice">135~650元</div>
+                </a>
+            </li>
+            <li class="splitLine"></li>
+            <li class="first">
+                <a href="https://search3.6688.com/SearchList-A--0-0-0-40-0-1-0--紫檀.html?NotSearchGoods=schgds20200522003" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/schgds20200522003.jpg"> </div>
+                    <div class="goodsPrice">200~48000元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://search3.6688.com/SearchList-A--0-0-0-40-0-1-0--%E9%9D%92%E9%87%91.html?NotSearchGoods=schgds20200522002" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/schgds20200522002.jpg"> </div>
+                    <div class="goodsPrice">620~4200元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://search3.6688.com/KeyWordsSearch-A-%E5%8D%97%E7%BA%A2.html?NotSearchGoods=schgds20200120001" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/schgds20200120001.jpg"> </div>
+                    <div class="goodsPrice">430~5850元</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://search3.6688.com/SearchList-A--0-0-0-40-0-1-0--%E7%BF%A1%E7%BF%A0.html?NotSearchGoods=schgds20200117001" target="_blank">
+                    <div class="goodsImg"> <img src="https://image.6688.com/Upload/mobileImg/schgds20200117001.jpg"> </div>
+                    <div class="goodsPrice">80~108000元</div>
+                </a>
+            </li>
+        </ul>
+        <div class="Pagination" style="display:none;"></div>
+    </div>
+    <div class="divSplit"></div>
+    <script src="./js/zhuyeliebiao2.js"></script> -->
+    <!-- 尾部 -->
+    <div class="footer" style="width:1000px;margin:0 auto">
+        <ul>
+            <li>
+                <h3 class="xs">新手指南</h3>
+                <ul>
+                    <ol><a href="#">注册新用户</a></ol>
+                    <ol><a href="#">网站订购流程</a></ol>
+                    <ol><a href="#">不用注册也可直接购买</a></ol>
+                </ul>
+            </li>
+            <li>
+                <h3 class="xs1">付款方式</h3>
+                <ul>
+                    <ol><a href="#">信用卡直接支付</a></ol>
+                    <ol><a href="#">支付宝、快钱、财付通</a></ol>
+                </ul>
+            </li>
+            <li>
+                <h3 class="xs2">配送方式</h3>
+                <ul>
+                    <ol><a href="#">货到付款城市及配送时间</a></ol>
+                    <ol><a href="#">款到快递城市及配送时间</a></ol>
+                    <ol><a href="#">快递查询</a></ol>
+                </ul>
+            </li>
+            <li>
+                <h3 class="xs3">帮助中心</h3>
+                <ul>
+                    <ol><a href="#">常见热点问题</a></ol>
+                    <ol><a href="#">联系我们</a></ol>
+                    <ol><a href="#">投诉与建议</a></ol>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <p class="copy">CopyRight © 1995-2020 六六八八电子商务网 版权所有 京ICP证140044号 &nbsp;京公网安备11010502024535</p>
+    </div>
+</body>
+
+</html>
